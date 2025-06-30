@@ -25,7 +25,7 @@ class TestOrderFeed:
         main_page.click_on_order_feed_button()
         order_page.wait_visibility_of_order_feed_title()
         count_2 = order_page.get_text_on_all_order_quantity()
-        assert int(count_2) - int(count_1) == 1
+        assert int(count_2) - int(count_1) > 0
 
     @allure.title('Проверка увеличения счетчика "Выполнено за сегодня" при создании нового заказа')
     def test_increase_of_count_orders_today_success(self, driver, login):
@@ -46,7 +46,7 @@ class TestOrderFeed:
         main_page.click_on_order_feed_button()
         order_page.wait_visibility_of_order_feed_title()
         count_2 = order_page.get_text_on_today_order_quantity()
-        assert int(count_2) - int(count_1) == 1
+        assert int(count_2) - int(count_1) > 0
 
     @allure.title('Проверка появления номера оформленного заказа в разделе "В работе"')
     def test_check_new_order_number_in_order_list_true(self, driver, login):

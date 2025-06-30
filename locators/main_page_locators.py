@@ -14,9 +14,9 @@ class MainPageLocators:
     #constructor_space = (By.XPATH, ".//section[contains(@class, 'BurgerConstructor_basket')]")
     constructor_space = (By.XPATH, ".//ul[contains(@class, 'BurgerConstructor_basket__list__')]")
     # ингредиент (булочка)
-    ingredients = (By.XPATH, ".//ul[1]/a[1]")
+    ingredients = (By.XPATH, "//a[contains(@class, 'BurgerIngredient_ingredient__1TVf6')][1]")
     # счетчик ингредиента (булочки)
-    ingredient_counter = (By.XPATH, ".//ul[1]/a[1]//p[contains(@class, 'counter_counter__num')]")
+    ingredient_counter = (By.XPATH, ".//a[contains(@class, 'BurgerIngredient_ingredient__1TVf6')]//p[contains(@class, 'counter_counter__num')][1]")
     # кнопка "Оформить заказ"
     create_order_button = (By.XPATH, ".//button[text() = 'Оформить заказ']")
     # номер оформленного заказа

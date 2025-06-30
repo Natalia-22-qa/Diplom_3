@@ -1,6 +1,3 @@
-class Urls:
-    main_page_site = 'https://stellarburgers.nomoreparties.site/'
-
 class Data:
     text_order_feed_title = 'Лента заказов'
     text_constructor_title = 'Соберите бургер'
